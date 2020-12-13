@@ -8,11 +8,25 @@ Run the following command in powershell/bash to setup and enter development envi
 
 `conda env create -f dev_env.yml`
 
-`conda activate japan_city_clustering`
+`conda activate jp_city_clusters`
 
 To exit development environment:
 
 `conda deactivate`
+
+To see if environment is already created:
+
+`conda info --envs`
+
+To remove environment:
+
+`conda env remove --name <env name>`
+
+#### To activate jupyter-dash (optional)
+
+Jupyter-dash is used to preview and test the visualization. However to activate the message in jupyterlab, it must be built:
+
+`jupyter lab build`
 
 ## Data Sources
 

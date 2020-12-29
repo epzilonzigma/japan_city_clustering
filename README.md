@@ -6,8 +6,8 @@ Web app to visualized municipal level clusters of Japanese demographic data from
 
 Run the following command in powershell/bash to setup and enter development environment with dependencies:
 
+`conda config --env --set channel_priority strict`
 `conda env create -f dev_env.yml`
-
 `conda activate jp_city_clusters`
 
 To exit development environment:

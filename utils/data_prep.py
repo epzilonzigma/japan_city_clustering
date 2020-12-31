@@ -37,7 +37,9 @@ def create_master_dataframe(folder_path):
             df = load_data(file)
         else:
             df_temp = load_data(file)
-            df = df.merge(df_temp, on = ['City', 'Prefecture', 'city_code'])
+            df = df.merge(df_temp, on = ['City', 'Prefecture', 'city_code', 'Municipality'])
+
+    df['City'] = df.City.str.replace('Ku-area', 'Tokyo 23 Wards')
 
     return df
 
